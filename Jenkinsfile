@@ -20,7 +20,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo "Running Calculator tests..."
-                bat 'javac tests\\CalculatorTest.java -d bin'
+                bat 'javac -cp bin tests\\CalculatorTest.java -d bin'
                 bat 'java -cp bin tests.CalculatorTest'
             }
         }
