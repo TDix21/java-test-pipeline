@@ -16,5 +16,17 @@ public class CalculatorTest {
         else {
             System.out.println("Subtract test failed!");
         }
+        if (calc.subtract(5, 3) == 2) {
+            System.out.println("Subtract test passed!");
+        } 
+        else {
+            System.out.println("Subtract test failed!");
+        }
+        if (calc.multiply(5, 3) == 15) {
+            System.out.println("Multiply test passed");
+        }
+        else {
+            System.out.println("Multiply test failed!");
+        }
     }
 }
